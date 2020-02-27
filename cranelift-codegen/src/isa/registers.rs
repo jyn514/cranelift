@@ -333,7 +333,7 @@ impl<'a> fmt::Display for DisplayRegUnit<'a> {
 #[test]
 fn assert_sizes() {
     use cranelift_codegen_shared::constants;
-    use std::mem::size_of;
+    use core::mem::size_of;
 
     // In these tests, size_of returns number of bytes: we actually want the number of bits, so
     // multiply these by 8.
